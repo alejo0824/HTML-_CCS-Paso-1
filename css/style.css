@@ -8,6 +8,11 @@
     --fuente-principal: 3.8rem;
 }
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
@@ -32,8 +37,49 @@ h3 {
     font-size: 1.8rem;
 }
 
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
     text-align: center;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.background-nav {
+    background-color: var(--secundario);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--blanco);
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background-color: #ffc107;
+    color: var(--oscuro);
 }
