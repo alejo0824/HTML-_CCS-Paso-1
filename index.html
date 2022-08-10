@@ -99,42 +99,47 @@
                         <line x1="11" y1="15" x2="13" y2="15" />
                     </svg>
                 </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatibus vero fuga officiis delectus saepe. Ipsa dolores voluptatem odit id.</p>
             </section>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatibus vero fuga officiis delectus saepe. Ipsa dolores voluptatem odit id.</p>
 
         </div>
 
-        <form class="formulaio">
-            <fieldset>
-                <legend>Contáctanos llenado todos los campos</legend>
-                <div class="campos">
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contáctanos llenado todos los campos</legend>
+                    <div class="campos">
 
-                    <div class="campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Tu Nombre">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input class="inputs" type="text" name="nombre" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input class="inputs" type="tel" name="telefono" placeholder="Tu Télefono">
+                        </div>
+
+                        <div class="campo">
+                            <label for="mail">Correo</label>
+                            <input class="inputs" type="email" name="mail" placeholder="Tu Correo">
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="inputs" name="mensaje" placeholder="Escribe Tu mensaje aquí"></textarea>
+                        </div>
+
+
                     </div>
-
-                    <div class="campo">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" placeholder="Tu Télefono">
+                    <div class="w-100 flex">
+                        <input class="boton " type="submit" value="Enviar">
                     </div>
-
-                    <div class="campo">
-                        <label for="mail">Correo</label>
-                        <input type="email" name="mail" placeholder="Tu Correo">
-                    </div>
-
-                    <div class="campo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" placeholder="Escribe Tu mensaje aquí"></textarea>
-                    </div>
-
-                    <input type="submit" value="Enviar">
-
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">

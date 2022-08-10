@@ -112,7 +112,7 @@ h3 {
 }
 
 .contenido-hero h2,
-p {
+.contenido-hero p {
     color: var(--blanco);
 }
 
@@ -131,4 +131,133 @@ p {
     font-weight: 700;
     font-size: 2rem;
     border-radius: .5rem;
+    border: none;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+
+/*Main - Servicios*/
+
+.caja {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.caja h2 {
+    text-transform: capitalize;
+}
+
+@media (min-width: 480px) {
+    .servicios {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+}
+
+.iconos {
+    margin: 0 auto;
+    background-color: var(--primario);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: 40;
+}
+
+.servicio p {
+    line-height: 1.5;
+}
+
+
+/*Main - Formulario*/
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    margin: 0 auto;
+    color: var(--primario);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1/3;
+    }
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+.inputs {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .flex {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+    }
+}
+
+.footer {
+    text-align: center;
 }
