@@ -52,6 +52,9 @@ h3 {
     font-size: 2rem;
 }
 
+
+/*Navegación*/
+
 .background-nav {
     background-color: var(--secundario);
 }
@@ -61,6 +64,22 @@ h3 {
     flex-direction: column;
 }
 
+.nav a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.nav a:hover {
+    background-color: #ffc107;
+    color: var(--oscuro);
+}
+
 @media (min-width: 480px) {
     .nav {
         flex-direction: row;
@@ -68,18 +87,48 @@ h3 {
     }
 }
 
-.nav a {
-    display: block;
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--blanco);
-    font-weight: 700;
-    text-align: center;
-    text-transform: capitalize;
-    padding: 1rem;
+
+/*Hero*/
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
-.nav a:hover {
-    background-color: #ffc107;
-    color: var(--oscuro);
+.contenido-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero h2,
+p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton {
+    margin-top: 2rem;
+    background-color: var(--secundario);
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: .5rem;
 }
