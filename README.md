@@ -6,7 +6,7 @@
 - Uso básico de sombra y gradientes de colores.
 - Efecto con Scroll.
 
-####Paso a paso
+###Paso a paso
 
 1. Estructura básica de HTML.
 2. Definición de fuente, colores y tipografia.
